@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Pesquisa Online</h1>
+    </header>
+    <main>
+        <!--FORM DADOS PESSOAIS-->
+        <section>
+            <form action="" method="get">
+                <fieldset class="formulario">
+                    <legend class="formulatio__titulo">Formulario de Usuário</legend>
+                    <div class="formulario__div">
+                        <label class="formulario__div__label">Nome do usuário</label>
+                        <input class="formulario__div__input" type="text" name="usuarioNome">
+                    </div>
+                    <div class="formulario__div">
+                        <label class="formulario__div__label">Email do usuário</label>
+                        <input class="formulario__div__input" type="email" name="usuarioEmail">
+                    </div>
+                    <div class="formulario__div">
+                        <label class="formulario__div__label">Data de nascimento</label>
+                        <input class="formulario__div__input" type="date" name="usuarioDob">
+                    </div>
+                    <div class="formulario__div">
+                        <label class="formulario__div__label">Contato do usuário</label>
+                        <input class="formulario__div__input" type="tel" name="usuarioContato" pattern="\(\d{2}\) \d{5}\-\d{4}"
+                            placeholder="(00) 00000-0000">
+                    </div>
+                    <div class="formulario__div">
+                        <label class="formulario__div__label">Foto de usuário</label>
+                        <input class="formulario__div__input" type="file" accept="image/*" name="usuarioFoto">
+                    </div>
+                    <div>
+                        <button type="submit" class="formulario__button__submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
 </body>
+
 </html>
