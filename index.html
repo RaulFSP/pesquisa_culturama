@@ -128,10 +128,26 @@
                     </div>
                     <div class="formulario__div">
                         <label class="formulario__div__label">Cor favorita</label>
-                        <input type="color" name="usuarioCor" class="" >
+                        <input type="color" name="usuarioCor" class="">
                     </div>
                 </fieldset>
 
+                <fieldset class="formulario">
+                    <legend class="formulario__titulo">Formulario de Opinião</legend>
+                    <div class="formulario__div">
+                        <label class="formulario__div__label">O que acha do nosso serviço?</label>
+                        <div class="formulario__div__input__radio">
+                            <input class="formulario__input" type="radio" name="usuarioOpiniao" value="4">Ótimo
+                            <input class="formulario__input" type="radio" name="usuarioOpiniao" value="3">Bom
+                            <input class="formulario__input" type="radio" name="usuarioOpiniao" value="2">Regular
+                            <input class="formulario__input" type="radio" name="usuarioOpiniao" value="1">Ruim
+                        </div>
+                    </div>
+                    <div class="formulario__div">
+                        <label class="formulario__div__label">Escreva sua opinião</label>
+                        <textarea rows="9" name="usuarioOpiniaoTexto"></textarea>
+                    </div>
+                </fieldset>
                 <div>
                     <button type="submit" class="formulario__button__submit">Enviar</button>
                 </div>
