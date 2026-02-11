@@ -16,8 +16,8 @@
         <!--FORM DADOS PESSOAIS-->
         <section>
             <form action="" method="get">
-                <fieldset class="formulario">
-                    <legend class="formulatio__titulo">Formulario de Usuário</legend>
+                <!-- <fieldset class="formulario">
+                    <legend class="formulario__titulo">Formulario de Usuário</legend>
                     <div class="formulario__div">
                         <label class="formulario__div__label">Nome do usuário</label>
                         <input class="formulario__input" type="text" name="usuarioNome">
@@ -40,10 +40,10 @@
                         <input class="formulario__input" type="file" accept="image/*" name="usuarioFoto">
                     </div>
 
-                </fieldset>
+                </fieldset> -->
 
-                <fieldset class="formulario">
-                    <legend class="formulatio__titulo">Formulario de Perfil</legend>
+                <!-- <fieldset class="formulario">
+                    <legend class="formulario__titulo">Formulario de Perfil</legend>
                     <div class="formulario__div">
                         <label class="formulario__div__label">Gênero</label>
                         <div class="formulario__div__input__radio">
@@ -54,7 +54,7 @@
                     <div class="formulario__div">
                         <label class="formulario__div__label">Estado Civil</label>
                         <select class="formulario__input" name="usuarioEstadoCivil">
-                            <option value="">Escolha</option>    
+                            <option value="">Escolha</option>
                             <option value="casado">Casado</option>
                             <option value="solteiro">Solteiro</option>
                             <option value="divorciado">Divorciado</option>
@@ -64,7 +64,7 @@
                     <div class="formulario__div">
                         <label class="formulario__div__label">Estado</label>
                         <select class="formulario__input" name="usuarioEstado">
-                            <option value="">Escolha</option>    
+                            <option value="">Escolha</option>
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
                             <option value="AP">Amapá</option>
@@ -98,6 +98,33 @@
                     <div class="formulario__div">
                         <label class="formulario__div__label">Cidade</label>
                         <input class="formulario__input" type="text" name="usuarioCidade">
+                    </div>
+                </fieldset> -->
+                <fieldset class="formulario">
+                    <legend class="formulario__titulo">Formulario de Hábito</legend>
+                    <div class="formulario__div">
+                        <p>Redes Sociais</p>
+                        <div>
+                            <label>facebook</label>
+                            <input type="checkbox" value="facebook" name="usuarioRedeSocial">
+                        </div>
+                        <div>
+                            <label>Instagram</label>
+                            <input type="checkbox" value="instagram" name="usuarioRedeSocial">
+                        </div>
+                        <div>
+                            <label>X</label>
+                            <input type="checkbox" value="x" name="usuarioRedeSocial">
+                        </div>
+                    </div>
+                    <div class="formulario__div">
+                        <label class="formulario__div__label">Estilo musical</label>
+                        <input type="text" name="usuarioMusica" class="formulario__input" list="listUsuarioMusica">
+                        <datalist id="listUsuarioMusica">
+                            <option value="rock"></option>
+                            <option value="pagode"></option>
+                            <option value="funk"></option>
+                        </datalist>
                     </div>
                 </fieldset>
 
