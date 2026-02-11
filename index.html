@@ -20,24 +20,24 @@
                     <legend class="formulatio__titulo">Formulario de Usuário</legend>
                     <div class="formulario__div">
                         <label class="formulario__div__label">Nome do usuário</label>
-                        <input class="formulario__div__input" type="text" name="usuarioNome">
+                        <input class="formulario__input" type="text" name="usuarioNome">
                     </div>
                     <div class="formulario__div">
                         <label class="formulario__div__label">Email do usuário</label>
-                        <input class="formulario__div__input" type="email" name="usuarioEmail">
+                        <input class="formulario__input" type="email" name="usuarioEmail">
                     </div>
                     <div class="formulario__div">
                         <label class="formulario__div__label">Data de nascimento</label>
-                        <input class="formulario__div__input" type="date" name="usuarioDob">
+                        <input class="formulario__input" type="date" name="usuarioDob">
                     </div>
                     <div class="formulario__div">
                         <label class="formulario__div__label">Contato do usuário</label>
-                        <input class="formulario__div__input" type="tel" name="usuarioContato"
+                        <input class="formulario__input" type="tel" name="usuarioContato"
                             pattern="\(\d{2}\) \d{5}\-\d{4}" placeholder="(00) 00000-0000">
                     </div>
                     <div class="formulario__div">
                         <label class="formulario__div__label">Foto de usuário</label>
-                        <input class="formulario__div__input" type="file" accept="image/*" name="usuarioFoto">
+                        <input class="formulario__input" type="file" accept="image/*" name="usuarioFoto">
                     </div>
 
                 </fieldset>
@@ -47,9 +47,18 @@
                     <div class="formulario__div">
                         <label class="formulario__div__label">Gênero</label>
                         <div class="formulario__div__input__radio">
-                            <input class="formulario__div__input" type="radio" name="usuarioGenero" value="f">FEMININO
-                            <input class="formulario__div__input" type="radio" name="usuarioGenero" value="m">MASCULINO
+                            <input class="formulario__input" type="radio" name="usuarioGenero" value="f">FEMININO
+                            <input class="formulario__input" type="radio" name="usuarioGenero" value="m">MASCULINO
                         </div>
+                    </div>
+                    <div class="formulario__div" >
+                        <label class="formulario__div__label">Estado Civil</label>
+                        <select class="formulario__input" name="usuarioEstadoCivil">
+                            <option value="casado">Casado</option>
+                            <option value="solteiro">Solteiro</option>
+                            <option value="divorciado">Divorciado</option>
+                            <option value="uniaoEstavel">União Estável</option>
+                        </select>
                     </div>
                 </fieldset>
 
