@@ -20,29 +20,86 @@
                     <legend class="formulatio__titulo">Formulario de Usuário</legend>
                     <div class="formulario__div">
                         <label class="formulario__div__label">Nome do usuário</label>
-                        <input class="formulario__div__input" type="text" name="usuarioNome">
+                        <input class="formulario__input" type="text" name="usuarioNome">
                     </div>
                     <div class="formulario__div">
                         <label class="formulario__div__label">Email do usuário</label>
-                        <input class="formulario__div__input" type="email" name="usuarioEmail">
+                        <input class="formulario__input" type="email" name="usuarioEmail">
                     </div>
                     <div class="formulario__div">
                         <label class="formulario__div__label">Data de nascimento</label>
-                        <input class="formulario__div__input" type="date" name="usuarioDob">
+                        <input class="formulario__input" type="date" name="usuarioDob">
                     </div>
                     <div class="formulario__div">
                         <label class="formulario__div__label">Contato do usuário</label>
-                        <input class="formulario__div__input" type="tel" name="usuarioContato" pattern="\(\d{2}\) \d{5}\-\d{4}"
-                            placeholder="(00) 00000-0000">
+                        <input class="formulario__input" type="tel" name="usuarioContato"
+                            pattern="\(\d{2}\) \d{5}\-\d{4}" placeholder="(00) 00000-0000">
                     </div>
                     <div class="formulario__div">
                         <label class="formulario__div__label">Foto de usuário</label>
-                        <input class="formulario__div__input" type="file" accept="image/*" name="usuarioFoto">
+                        <input class="formulario__input" type="file" accept="image/*" name="usuarioFoto">
                     </div>
-                    <div>
-                        <button type="submit" class="formulario__button__submit">Enviar</button>
+
+                </fieldset>
+
+                <fieldset class="formulario">
+                    <legend class="formulatio__titulo">Formulario de Perfil</legend>
+                    <div class="formulario__div">
+                        <label class="formulario__div__label">Gênero</label>
+                        <div class="formulario__div__input__radio">
+                            <input class="formulario__input" type="radio" name="usuarioGenero" value="f">FEMININO
+                            <input class="formulario__input" type="radio" name="usuarioGenero" value="m">MASCULINO
+                        </div>
+                    </div>
+                    <div class="formulario__div">
+                        <label class="formulario__div__label">Estado Civil</label>
+                        <select class="formulario__input" name="usuarioEstadoCivil">
+                            <option value="">Escolha</option>    
+                            <option value="casado">Casado</option>
+                            <option value="solteiro">Solteiro</option>
+                            <option value="divorciado">Divorciado</option>
+                            <option value="uniaoEstavel">União Estável</option>
+                        </select>
+                    </div>
+                    <div class="formulario__div">
+                        <label class="formulario__div__label">Estado</label>
+                        <select class="formulario__input" name="usuarioEstado">
+                            <option value="">Escolha</option>    
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+
+                        </select>
                     </div>
                 </fieldset>
+
+                <div>
+                    <button type="submit" class="formulario__button__submit">Enviar</button>
+                </div>
             </form>
         </section>
 
