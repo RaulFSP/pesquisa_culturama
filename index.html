@@ -32,17 +32,30 @@
                     </div>
                     <div class="formulario__div">
                         <label class="formulario__div__label">Contato do usuário</label>
-                        <input class="formulario__div__input" type="tel" name="usuarioContato" pattern="\(\d{2}\) \d{5}\-\d{4}"
-                            placeholder="(00) 00000-0000">
+                        <input class="formulario__div__input" type="tel" name="usuarioContato"
+                            pattern="\(\d{2}\) \d{5}\-\d{4}" placeholder="(00) 00000-0000">
                     </div>
                     <div class="formulario__div">
                         <label class="formulario__div__label">Foto de usuário</label>
                         <input class="formulario__div__input" type="file" accept="image/*" name="usuarioFoto">
                     </div>
-                    <div>
-                        <button type="submit" class="formulario__button__submit">Enviar</button>
+
+                </fieldset>
+
+                <fieldset class="formulario">
+                    <legend class="formulatio__titulo">Formulario de Perfil</legend>
+                    <div class="formulario__div">
+                        <label class="formulario__div__label">Gênero</label>
+                        <div class="formulario__div__input__radio">
+                            <input class="formulario__div__input" type="radio" name="usuarioGenero" value="f">FEMININO
+                            <input class="formulario__div__input" type="radio" name="usuarioGenero" value="m">MASCULINO
+                        </div>
                     </div>
                 </fieldset>
+
+                <div>
+                    <button type="submit" class="formulario__button__submit">Enviar</button>
+                </div>
             </form>
         </section>
 
