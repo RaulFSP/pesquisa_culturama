@@ -6,7 +6,17 @@
 body {
     font-size: 1.2rem;
 }
-
+.title__container{
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+}
+.title__container--primary{
+    background-color: brown;
+    color: white;
+}
 .formulario {
     display: flex;
     flex-direction: column;
@@ -57,8 +67,12 @@ body {
     flex-direction: row;
     
 }
-
-.formulario__button__submit {
+.formulario__div__button{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+.formulario__button {
     padding: 1rem 3rem;
     font-size: 1.2rem;
 }
@@ -66,5 +80,14 @@ body {
 @media(min-width:992px) {
     .formulario {
         width: 50%;
+    }
+}
+
+@media(max-width:992px) {
+    .formulario {
+        width: 80%;
+    }
+    .formulario__div__input__radio{
+        flex-direction: column;
     }
 }

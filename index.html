@@ -10,13 +10,16 @@
 
 <body>
     <header>
-        <h1>Pesquisa Online</h1>
+        <div class="title__container title__container--primary">
+            <h1>Pesquisa Online</h1>
+
+        </div>
     </header>
     <main>
         <!--FORM DADOS PESSOAIS-->
         <section>
             <form action="" method="get">
-                <!-- <fieldset class="formulario">
+                 <fieldset class="formulario">
                     <legend class="formulario__titulo">Formulario de Usuário</legend>
                     <div class="formulario__div">
                         <label class="formulario__div__label">Nome do usuário</label>
@@ -40,9 +43,9 @@
                         <input class="formulario__input" type="file" accept="image/*" name="usuarioFoto">
                     </div>
 
-                </fieldset> -->
+                </fieldset> 
 
-                <!-- <fieldset class="formulario">
+                 <fieldset class="formulario">
                     <legend class="formulario__titulo">Formulario de Perfil</legend>
                     <div class="formulario__div">
                         <label class="formulario__div__label">Gênero</label>
@@ -99,7 +102,7 @@
                         <label class="formulario__div__label">Cidade</label>
                         <input class="formulario__input" type="text" name="usuarioCidade">
                     </div>
-                </fieldset> -->
+                </fieldset>
                 <fieldset class="formulario">
                     <legend class="formulario__titulo">Formulario de Hábito</legend>
                     <div class="formulario__div">
@@ -148,8 +151,20 @@
                         <textarea rows="9" name="usuarioOpiniaoTexto"></textarea>
                     </div>
                 </fieldset>
-                <div>
-                    <button type="submit" class="formulario__button__submit">Enviar</button>
+                <fieldset class="formulario">
+                    <legend class="formulario__titulo">Confirmações</legend>
+                    <div class="formulario__div__checkbox">
+                        <label class="formulario__div__label">Eu aceito participar da pesquisa</label>
+                        <input type="checkbox" name="usuarioLGPD" class="" checked required>
+                    </div>
+                    <div class="formulario__div__checkbox">
+                        <label class="formulario__div__label">Receber resultado por email</label>
+                        <input type="checkbox" name="usuarioReceberEmail" class="" required>
+                    </div>
+                </fieldset>
+                <div class="formulario__div__button">
+                    <button type="reset" class="formulario__button">Limpar</button>
+                    <button type="submit" class="formulario__button">Enviar</button>
                 </div>
             </form>
         </section>
