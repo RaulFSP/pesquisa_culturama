@@ -7,13 +7,23 @@
 :root {
     --font-titulo: "Fjalla One", sans-serif;
     --font-regular: "Work Sans", sans-serif;
+    --cor-texto: #333333;
+    --cor-fundo: #ffffff;
+}
 
+.theme-high-contrast {
+    --cor-texto: #000000;
+    --cor-fundo: #ffffff;
+}
+
+html {
+    font-size: 100%;
 }
 
 body {
-    font-size: 1rem;
     font-family: var(--font-regular);
-    background-color: #f9f9f9;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
 }
 
 main {
@@ -35,6 +45,11 @@ img {
 
 h1 {
     font-family: var(--font-titulo);
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
 }
 
 form {
@@ -79,8 +94,8 @@ input[type="file"] {
     margin-bottom: 5px;
 }
 
-input[type="radio"]{
-    
+input[type="radio"] {
+
     margin-left: 0.2rem;
     margin-right: 1rem;
 }
