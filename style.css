@@ -71,13 +71,18 @@ input[type="radio"],
 input[type="checkbox"] {
     width: auto;
 }
-input[type="tel"]{
+
+input[type="tel"],
+input[type="file"] {
     margin-bottom: 5px;
 }
-small{
+
+
+small {
     display: block;
     margin-bottom: 20px;
 }
+
 input[type="color"] {
     width: 40px;
     padding: 0 0.5rem;
@@ -88,14 +93,19 @@ label {
     margin-bottom: 0.5rem;
 }
 
-input:invalid,select:invalid,textarea:invalid{
+input:invalid,
+select:invalid,
+textarea:invalid {
     border: 1px solid red;
 }
 
-input:valid,select:valid,textarea:valid {
+input:valid,
+select:valid,
+textarea:valid {
     border: 1px solid green;
 }
-button{
+
+button {
     width: 100px;
     height: 30px;
     background-color: #ffffff;
@@ -103,7 +113,8 @@ button{
     border-radius: 0.5rem;
     cursor: pointer;
 }
-button:hover{
+
+button:hover {
     background-color: orangered;
     color: white;
 }

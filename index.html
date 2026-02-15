@@ -27,27 +27,29 @@
                 <fieldset>
                     <legend>Formulario de Usuário</legend>
                     <div>
-                        <label>Nome do usuário</label>
-                        <input type="text" name="usuarioNome" required>
+                        <label for="usuarioNome">Nome do usuário</label>
+                        <input type="text" name="usuarioNome" id="usuarioNome" required>
                     </div>
                     <div>
-                        <label>Email do usuário</label>
-                        <input type="email" name="usuarioEmail" required>
+                        <label for="usuarioEmail">Email do usuário</label>
+                        <input type="email" name="usuarioEmail" id="usuarioEmail" required>
                     </div>
                     <div>
-                        <label>Data de nascimento</label>
-                        <input type="date" name="usuarioDob" required>
+                        <label for="usuarioDob">Data de nascimento</label>
+                        <input type="date" name="usuarioDob" id="usuarioDob" required>
                     </div>
                     <div>
-                        <label>Contato do usuário</label>
-                        <input type="tel" name="usuarioContato" pattern="[0-9]{11}" placeholder="(00)000000000"
-                            aria-describedby="phoneHelp">
+                        <label id="usuarioContato">Contato do usuário</label>
+                        <input type="tel" name="usuarioContato" id="usuarioContato" pattern="[0-9]{11}"
+                            placeholder="(00)000000000" aria-describedby="phoneHelp">
                         <small id="phoneHelp">preencha com 11 digitos no formato: DDD + número sem espaços ou
                             hífen</small>
                     </div>
                     <div>
-                        <label>Foto de usuário</label>
-                        <input type="file" accept="image/*" name="usuarioFoto">
+                        <label for="usuarioFoto">Foto de usuário</label>
+                        <input type="file" accept="image/*" name="usuarioFoto" id="usuarioFoto"
+                            aria-describedby="imageHelp">
+                        <small id="imageHelp">Envie uma foto no formato png, jpeg ou webm</small>
                     </div>
 
                 </fieldset>
@@ -169,8 +171,8 @@
                     </div>
                 </fieldset>
                 <div>
-                    <button type="reset">Limpar</button>
-                    <button type="submit">Enviar</button>
+                    <button type="reset" aria-label="limpar dados do formulário">Limpar</button>
+                    <button type="submit" aria-label="enviar dados do formulário">Enviar</button>
                 </div>
             </form>
         </section>
