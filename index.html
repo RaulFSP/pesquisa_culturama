@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de pesquisa online Culturama">
     <link rel="shortcut icon" href="assets/culturama-favico.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +16,7 @@
 <body>
     <header>
         <div>
-            <img src="./assets/logo-culturama.png" alt="">
+            <img src="./assets/logo-culturama.png" alt="Culturama Pesquisa Online logo" >
             <h1>Pesquisa Online</h1>
 
         </div>
@@ -57,15 +58,17 @@
                 <fieldset>
                     <legend>Formulario de Perfil</legend>
                     <div>
-                        <label>Gênero</label>
+                        <p>Gênero</p>
                         <div>
-                            <input type="radio" name="usuarioGenero" value="f">FEMININO
-                            <input type="radio" name="usuarioGenero" value="m">MASCULINO
+                            <label for="usuarioGeneroF">FEMININO</label>
+                            <input type="radio" name="usuarioGenero" id="usuarioGeneroF" value="f">
+                            <label for="usuarioGeneroM">MASCULINO</label>
+                            <input type="radio" name="usuarioGenero" id="usuarioGeneroM" value="m">
                         </div>
                     </div>
                     <div>
-                        <label>Estado Civil</label>
-                        <select name="usuarioEstadoCivil">
+                        <label for="usuarioEstadoCivil">Estado Civil</label>
+                        <select name="usuarioEstadoCivil" id="usuarioEstadoCivil">
                             <option value="">Escolha</option>
                             <option value="casado">Casado</option>
                             <option value="solteiro">Solteiro</option>
@@ -74,8 +77,8 @@
                         </select>
                     </div>
                     <div>
-                        <label>Estado</label>
-                        <select name="usuarioEstado" required>
+                        <label for="usuarioEstado">Estado</label>
+                        <select id="usuarioEstado" name="usuarioEstado" required>
                             <option value="">Escolha</option>
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
@@ -108,8 +111,8 @@
                         </select>
                     </div>
                     <div>
-                        <label>Cidade</label>
-                        <input type="text" name="usuarioCidade">
+                        <label for="usuarioCidade">Cidade</label>
+                        <input type="text" id="usuarioCidade" name="usuarioCidade">
                     </div>
                 </fieldset>
                 <fieldset>
@@ -117,21 +120,21 @@
                     <div>
                         <p>Redes Sociais</p>
                         <div>
-                            <label>facebook</label>
-                            <input type="checkbox" value="facebook" name="usuarioRedeSocial">
+                            <label for="usuarioRedeSocialF">facebook</label>
+                            <input type="checkbox" value="facebook" name="usuarioRedeSocial" id="usuarioRedeSocialF">
                         </div>
                         <div>
-                            <label>Instagram</label>
-                            <input type="checkbox" value="instagram" name="usuarioRedeSocial">
+                            <label for="usuarioRedeSocialI">Instagram</label>
+                            <input type="checkbox" value="instagram" name="usuarioRedeSocial" id="usuarioRedeSocialI">
                         </div>
                         <div>
-                            <label>X</label>
-                            <input type="checkbox" value="x" name="usuarioRedeSocial">
+                            <label for="usuarioRedeSocialX">X</label>
+                            <input type="checkbox" value="x" name="usuarioRedeSocial" id="usuarioRedeSocialX">
                         </div>
                     </div>
                     <div>
-                        <label>Estilo musical</label>
-                        <input type="text" name="usuarioMusica" list="listUsuarioMusica">
+                        <label for="usuarioMusica">Estilo musical</label>
+                        <input type="text" name="usuarioMusica" list="listUsuarioMusica" id="usuarioMusica">
                         <datalist id="listUsuarioMusica">
                             <option value="rock"></option>
                             <option value="pagode"></option>
@@ -139,35 +142,42 @@
                         </datalist>
                     </div>
                     <div>
-                        <label>Cor favorita</label>
-                        <input type="color" name="usuarioCor" iv>
+                        <label for="usuarioCor">Cor favorita</label>
+                        <input type="color" name="usuarioCor" id="usuarioCor">
                 </fieldset>
 
                 <fieldset>
                     <legend>Formulario de Opinião</legend>
                     <div>
-                        <label>O que acha do nosso serviço?</label>
+                        <p>O que acha do nosso serviço?</p>
                         <div>
-                            <input type="radio" name="usuarioOpiniao" value="4">Ótimo
-                            <input type="radio" name="usuarioOpiniao" value="3">Bom
-                            <input type="radio" name="usuarioOpiniao" value="2">Regular
-                            <input type="radio" name="usuarioOpiniao" value="1">Ruim
+                            <label for="usuarioOpiniaoOtimo">Ótimo</label>
+                            <input type="radio" name="usuarioOpiniao" value="4" id="usuarioOpiniaoOtimo">
+                            
+                            <label for="usuarioOpiniaoBom">Bom</label>
+                            <input type="radio" name="usuarioOpiniao" id="usuarioOpiniaoBom" value="3">
+                            
+                            <label for="usuarioOpiniaoRegular">Regular</label>
+                            <input type="radio" name="usuarioOpiniao" id="usuarioOpiniaoRegular" value="2">
+                            
+                            <label for="usuarioOpiniaoRuim">Ruim</label>
+                            <input type="radio" name="usuarioOpiniao" id="usuarioOpiniaoRuim" value="1">
                         </div>
                     </div>
                     <div>
-                        <label>Escreva sua opinião</label>
-                        <textarea rows="9" name="usuarioOpiniaoTexto"></textarea>
+                        <label for="usuarioOpiniaoTexto">Escreva sua opinião</label>
+                        <textarea rows="9" name="usuarioOpiniaoTexto" id="usuarioOpiniaoTexto"></textarea>
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>Confirmações</legend>
                     <div>
-                        <label>Eu aceito participar da pesquisa</label>
-                        <input type="checkbox" name="usuarioLGPD" required>
+                        <label for="usuarioLGPD">Eu aceito participar da pesquisa</label>
+                        <input type="checkbox" name="usuarioLGPD" id="usuarioLGPD" required>
                     </div>
                     <div>
-                        <label>Receber resultado por email</label>
-                        <input type="checkbox" name="usuarioReceberEmail">
+                        <label for="usuarioReceberEmail">Receber resultado por email</label>
+                        <input type="checkbox" name="usuarioReceberEmail" id="usuarioReceberEmail">
                     </div>
                 </fieldset>
                 <div>
