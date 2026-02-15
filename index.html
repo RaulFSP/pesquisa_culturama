@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de pesquisa online Culturama">
     <link rel="shortcut icon" href="assets/culturama-favico.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Culturama</title>
 </head>
 
 <body>
     <header>
-        <div class="title__container title__container--primary">
-            <img src="./assets/logo-culturama.png" alt="">
-            <h1 class="title__text">Pesquisa Online</h1>
+        <div>
+            <img src="./assets/logo-culturama.png" alt="Culturama Pesquisa Online logo" >
+            <h1>Pesquisa Online</h1>
 
         </div>
     </header>
@@ -24,44 +25,50 @@
         <!--FORM DADOS PESSOAIS-->
         <section>
             <form action="" method="get">
-                <fieldset class="formulario">
-                    <legend class="formulario__titulo">Formulario de Usuário</legend>
-                    <div class="formulario__div">
-                        <label class="formulario__div__label">Nome do usuário</label>
-                        <input class="formulario__input" type="text" name="usuarioNome">
+                <fieldset>
+                    <legend>Formulario de Usuário</legend>
+                    <div>
+                        <label for="usuarioNome">Nome do usuário</label>
+                        <input type="text" name="usuarioNome" id="usuarioNome" required>
                     </div>
-                    <div class="formulario__div">
-                        <label class="formulario__div__label">Email do usuário</label>
-                        <input class="formulario__input" type="email" name="usuarioEmail">
+                    <div>
+                        <label for="usuarioEmail">Email do usuário</label>
+                        <input type="email" name="usuarioEmail" id="usuarioEmail" required>
                     </div>
-                    <div class="formulario__div">
-                        <label class="formulario__div__label">Data de nascimento</label>
-                        <input class="formulario__input" type="date" name="usuarioDob">
+                    <div>
+                        <label for="usuarioDob">Data de nascimento</label>
+                        <input type="date" name="usuarioDob" id="usuarioDob" required>
                     </div>
-                    <div class="formulario__div">
-                        <label class="formulario__div__label">Contato do usuário</label>
-                        <input class="formulario__input" type="tel" name="usuarioContato"
-                            pattern="\(\d{2}\) \d{5}\-\d{4}" placeholder="(00) 00000-0000">
+                    <div>
+                        <label id="usuarioContato">Contato do usuário</label>
+                        <input type="tel" name="usuarioContato" id="usuarioContato" pattern="[0-9]{11}"
+                            placeholder="(00)000000000" aria-describedby="phoneHelp">
+                        <small id="phoneHelp">preencha com 11 digitos no formato: DDD + número sem espaços ou
+                            hífen</small>
                     </div>
-                    <div class="formulario__div">
-                        <label class="formulario__div__label">Foto de usuário</label>
-                        <input class="formulario__input" type="file" accept="image/*" name="usuarioFoto">
+                    <div>
+                        <label for="usuarioFoto">Foto de usuário</label>
+                        <input type="file" accept="image/*" name="usuarioFoto" id="usuarioFoto"
+                            aria-describedby="imageHelp">
+                        <small id="imageHelp">Envie uma foto no formato png, jpeg ou webm</small>
                     </div>
 
                 </fieldset>
 
-                <fieldset class="formulario">
-                    <legend class="formulario__titulo">Formulario de Perfil</legend>
-                    <div class="formulario__div">
-                        <label class="formulario__div__label">Gênero</label>
-                        <div class="formulario__div__input__radio">
-                            <input class="formulario__input" type="radio" name="usuarioGenero" value="f">FEMININO
-                            <input class="formulario__input" type="radio" name="usuarioGenero" value="m">MASCULINO
+                <fieldset>
+                    <legend>Formulario de Perfil</legend>
+                    <div>
+                        <p>Gênero</p>
+                        <div>
+                            <label for="usuarioGeneroF">FEMININO</label>
+                            <input type="radio" name="usuarioGenero" id="usuarioGeneroF" value="f">
+                            <label for="usuarioGeneroM">MASCULINO</label>
+                            <input type="radio" name="usuarioGenero" id="usuarioGeneroM" value="m">
                         </div>
                     </div>
-                    <div class="formulario__div">
-                        <label class="formulario__div__label">Estado Civil</label>
-                        <select class="formulario__input" name="usuarioEstadoCivil">
+                    <div>
+                        <label for="usuarioEstadoCivil">Estado Civil</label>
+                        <select name="usuarioEstadoCivil" id="usuarioEstadoCivil">
                             <option value="">Escolha</option>
                             <option value="casado">Casado</option>
                             <option value="solteiro">Solteiro</option>
@@ -69,9 +76,9 @@
                             <option value="uniaoEstavel">União Estável</option>
                         </select>
                     </div>
-                    <div class="formulario__div">
-                        <label class="formulario__div__label">Estado</label>
-                        <select class="formulario__input" name="usuarioEstado">
+                    <div>
+                        <label for="usuarioEstado">Estado</label>
+                        <select id="usuarioEstado" name="usuarioEstado" required>
                             <option value="">Escolha</option>
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
@@ -103,73 +110,79 @@
 
                         </select>
                     </div>
-                    <div class="formulario__div">
-                        <label class="formulario__div__label">Cidade</label>
-                        <input class="formulario__input" type="text" name="usuarioCidade">
+                    <div>
+                        <label for="usuarioCidade">Cidade</label>
+                        <input type="text" id="usuarioCidade" name="usuarioCidade">
                     </div>
                 </fieldset>
-                <fieldset class="formulario">
-                    <legend class="formulario__titulo">Formulario de Hábito</legend>
-                    <div class="formulario__div">
+                <fieldset>
+                    <legend>Formulario de Hábito</legend>
+                    <div>
                         <p>Redes Sociais</p>
                         <div>
-                            <label>facebook</label>
-                            <input type="checkbox" value="facebook" name="usuarioRedeSocial">
+                            <label for="usuarioRedeSocialF">facebook</label>
+                            <input type="checkbox" value="facebook" name="usuarioRedeSocial" id="usuarioRedeSocialF">
                         </div>
                         <div>
-                            <label>Instagram</label>
-                            <input type="checkbox" value="instagram" name="usuarioRedeSocial">
+                            <label for="usuarioRedeSocialI">Instagram</label>
+                            <input type="checkbox" value="instagram" name="usuarioRedeSocial" id="usuarioRedeSocialI">
                         </div>
                         <div>
-                            <label>X</label>
-                            <input type="checkbox" value="x" name="usuarioRedeSocial">
+                            <label for="usuarioRedeSocialX">X</label>
+                            <input type="checkbox" value="x" name="usuarioRedeSocial" id="usuarioRedeSocialX">
                         </div>
                     </div>
-                    <div class="formulario__div">
-                        <label class="formulario__div__label">Estilo musical</label>
-                        <input type="text" name="usuarioMusica" class="formulario__input" list="listUsuarioMusica">
+                    <div>
+                        <label for="usuarioMusica">Estilo musical</label>
+                        <input type="text" name="usuarioMusica" list="listUsuarioMusica" id="usuarioMusica">
                         <datalist id="listUsuarioMusica">
                             <option value="rock"></option>
                             <option value="pagode"></option>
                             <option value="funk"></option>
                         </datalist>
                     </div>
-                    <div class="formulario__div">
-                        <label class="formulario__div__label">Cor favorita</label>
-                        <input type="color" name="usuarioCor" class="">
-                    </div>
+                    <div>
+                        <label for="usuarioCor">Cor favorita</label>
+                        <input type="color" name="usuarioCor" id="usuarioCor">
                 </fieldset>
 
-                <fieldset class="formulario">
-                    <legend class="formulario__titulo">Formulario de Opinião</legend>
-                    <div class="formulario__div">
-                        <label class="formulario__div__label">O que acha do nosso serviço?</label>
-                        <div class="formulario__div__input__radio">
-                            <input class="formulario__input" type="radio" name="usuarioOpiniao" value="4">Ótimo
-                            <input class="formulario__input" type="radio" name="usuarioOpiniao" value="3">Bom
-                            <input class="formulario__input" type="radio" name="usuarioOpiniao" value="2">Regular
-                            <input class="formulario__input" type="radio" name="usuarioOpiniao" value="1">Ruim
+                <fieldset>
+                    <legend>Formulario de Opinião</legend>
+                    <div>
+                        <p>O que acha do nosso serviço?</p>
+                        <div>
+                            <label for="usuarioOpiniaoOtimo">Ótimo</label>
+                            <input type="radio" name="usuarioOpiniao" value="4" id="usuarioOpiniaoOtimo">
+                            
+                            <label for="usuarioOpiniaoBom">Bom</label>
+                            <input type="radio" name="usuarioOpiniao" id="usuarioOpiniaoBom" value="3">
+                            
+                            <label for="usuarioOpiniaoRegular">Regular</label>
+                            <input type="radio" name="usuarioOpiniao" id="usuarioOpiniaoRegular" value="2">
+                            
+                            <label for="usuarioOpiniaoRuim">Ruim</label>
+                            <input type="radio" name="usuarioOpiniao" id="usuarioOpiniaoRuim" value="1">
                         </div>
                     </div>
-                    <div class="formulario__div">
-                        <label class="formulario__div__label">Escreva sua opinião</label>
-                        <textarea rows="9" name="usuarioOpiniaoTexto"></textarea>
+                    <div>
+                        <label for="usuarioOpiniaoTexto">Escreva sua opinião</label>
+                        <textarea rows="9" name="usuarioOpiniaoTexto" id="usuarioOpiniaoTexto"></textarea>
                     </div>
                 </fieldset>
-                <fieldset class="formulario">
-                    <legend class="formulario__titulo">Confirmações</legend>
-                    <div class="formulario__div__checkbox">
-                        <label class="formulario__div__label">Eu aceito participar da pesquisa</label>
-                        <input type="checkbox" name="usuarioLGPD" class="" checked required>
+                <fieldset>
+                    <legend>Confirmações</legend>
+                    <div>
+                        <label for="usuarioLGPD">Eu aceito participar da pesquisa</label>
+                        <input type="checkbox" name="usuarioLGPD" id="usuarioLGPD" required>
                     </div>
-                    <div class="formulario__div__checkbox">
-                        <label class="formulario__div__label">Receber resultado por email</label>
-                        <input type="checkbox" name="usuarioReceberEmail" class="" required>
+                    <div>
+                        <label for="usuarioReceberEmail">Receber resultado por email</label>
+                        <input type="checkbox" name="usuarioReceberEmail" id="usuarioReceberEmail">
                     </div>
                 </fieldset>
-                <div class="formulario__div__button">
-                    <button type="reset" class="formulario__button">Limpar</button>
-                    <button type="submit" class="formulario__button">Enviar</button>
+                <div>
+                    <button type="reset" aria-label="limpar dados do formulário">Limpar</button>
+                    <button type="submit" aria-label="enviar dados do formulário">Enviar</button>
                 </div>
             </form>
         </section>
